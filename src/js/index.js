@@ -9,8 +9,8 @@ const sort = {
 	ALPHABETICAL_DESCENDING: (a, b) => a.dataset.name < b.dataset.name ? 1 : -1,
 	DIFFICULTY_ASCENDING: (a, b) => a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
 	DIFFICULTY_DESCENDING: (a, b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1,
-	DATEADDED_ASCENDING: (a, b) => (new Date(a.dataset.dateadded)).getTime() > (new Date(b.dataset.dateadded)).getTime() ? 1 : -1,
-	DATEADDED_DESCENDING: (a, b) => (new Date(a.dataset.dateadded)).getTime() < (new Date(b.dataset.dateadded)).getTime() ? 1 : -1
+	DATEADDED_ASCENDING: (a, b) => a.dataset.dateadded > b.dataset.dateadded ? 1 : -1,
+	DATEADDED_DESCENDING: (a, b) => a.dataset.dateadded < b.dataset.dateadded ? 1 : -1
 };
 
 const contentEl = document.getElementById('content');
